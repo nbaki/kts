@@ -1,8 +1,8 @@
-<div class="footer">
-<div class="container">
-<div class="row-fluid">
-<div class="header">
-<div class="span0">
+<div class="footer-area">
+<!--<div class="container">-->
+<!--<div class="row-fluid">-->
+<!--<div class="header">-->
+<!--<div class="span0">-->
     <div class="footer-section">
         <table class="footer-table">
             <tr>
@@ -30,11 +30,11 @@
         </table>
     </div>
 <?php if(!dynamic_sidebar('footer3')) echo ""; ?>
-</div>
+<!--</div>-->
 <div class="clear"></div>
-</div>
-</div> 
-</div>
+<!--</div>-->
+<!--</div> -->
+<!--</div>-->
 </div>
 </body>
 </html>
