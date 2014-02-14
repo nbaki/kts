@@ -272,7 +272,7 @@ a.content-link:visited {
     #socialmedia-container DIV.smc_icon_container:last-child {
         margin: 0 8px 10px !important;
     }
-    #socialmedia-container div.smc_icon_container {
+    #socialmedia-container div.smc_icon_container, .footer-area, .page-container {
         width: auto;
     }
 }

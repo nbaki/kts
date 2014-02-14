@@ -45,7 +45,20 @@ get_header();
 <div  id="single-post_post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php 
 
-while(have_posts()): the_post(); ?>
+if (is_page("Our Process")) : ?>
+
+    <div id="question">
+        <script>
+            $(document).ready(function() {
+                var text = $('#q1').text();
+                alert(text);
+            });</script>
+    </div>
+    <div id="answer-text">
+
+    </div>
+<?php endif; ?>
+<?php while(have_posts()): the_post(); ?>
  
 <div <?php post_class('post'); ?>>
 <div class="clear"></div>
