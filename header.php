@@ -101,8 +101,6 @@
     <div class="tab_nav">
 
         <ul class="tabs">
-<!--            <li class="logo"><img src='--><?php //echo wp_get_attachment_url(353); ?><!--' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50' />-->
-<!--            </li>-->
             <li>
                 <a class="menu_link" id="home_link" href="/wp/home"><img src="<?php echo get_childTheme_url(); ?>/images/home_button.png" width="20" height="20" style="margin-right: 4px;"/>
                     Home</a></li>
@@ -114,9 +112,23 @@
                     <img src="<?php echo get_childTheme_url(); ?>/images/services_button.png" width="20" height="20" style="margin-right: 4px;"/>Our Process</a></li>
             <li><a class="menu_link" id="contact_link" href="/wp/contact-us">
                     <img src="<?php echo get_childTheme_url(); ?>/images/contact_button.png" width="20" height="20" style="margin-right: 4px;"/>Contact Us</a></li>
-<!--            <li class="logo"><img src='--><?php //echo wp_get_attachment_url(353); ?><!--' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50' />-->
-<!--            </li>-->
         </ul>
+    </div>
+
+    <div id="mobile-tab-nav">
+        <?php
+        $args = array(
+            'theme_location' => 'primary',
+            'depth' => 3,
+            'container' => false,
+            'menu_class' => 'mobile-nav',
+            'fallback_cb' => false,
+            'walker' => new heavenly_bootstrap_walker_nav_menu()
+        );
+
+
+        wp_nav_menu($args);
+        ?>
     </div>
     <?php
 

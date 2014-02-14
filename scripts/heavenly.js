@@ -6,29 +6,31 @@ function setHeaderDefaults() {
 
 function setMobileNavigation() {
     $('#mobile-nav-button-minus').click(function () {
-        $('.nav').hide();
+        $('#mobile-tab-nav').hide();
         $('#mobile-nav-button-plus').show();
         $('#mobile-nav-button-minus').hide();
     });
     $('#mobile-nav-button-plus').click(function () {
-        $('.nav').show();
+        $('#mobile-tab-nav').show();
         $('#mobile-nav-button-minus').show();
         $('#mobile-nav-button-plus').hide();
     });
     $(window).resize(function() {
         if ($(window).width() <= 700) {
-            $('#mobile-nav-button-minus').click(function () {
-                $('.nav').hide();
+            $('#mobile-tab-nav').hide();
+
+            $('#mobile-nav-button-minus').hide().click(function () {
+                $('#mobile-tab-nav').hide();
                 $('#mobile-nav-button-plus').show();
                 $('#mobile-nav-button-minus').hide();
             });
-            $('#mobile-nav-button-plus').click(function () {
-                $('.nav').show();
+            $('#mobile-nav-button-plus').show().click(function () {
+                $('#mobile-tab-nav').show();
                 $('#mobile-nav-button-minus').show();
                 $('#mobile-nav-button-plus').hide();
             });
         } else {
-            $('.nav').show();
+            $('#mobile-tab-nav').hide();
         }
     });
 }
