@@ -18,8 +18,8 @@
 <body <?php body_class(); ?>>
 <script>
     $(document).ready(function() {
-        $('.nav:first').prepend("<li><img src='<?php echo wp_get_attachment_url(353); ?>' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
-        $('.nav:last').append("<li id='last-logo'><img src='<?php echo wp_get_attachment_url(353); ?>' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
+        //$('.nav:first').prepend("<li><img src='<?php echo wp_get_attachment_url(353); ?>' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
+        //$('.nav:last').append("<li id='last-logo'><img src='<?php echo wp_get_attachment_url(353); ?>' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
         setHeaderDefaults();
         setMobileNavigation();
     });
@@ -85,11 +85,8 @@
     </script>
 <?php endif; ?>
  <header id="banner-header">
-    <img class="banner" src="<?php echo wp_get_attachment_url(267); ?>" alt="Kind Technology Services" />
+    <img class="banner" src="<?php echo wp_get_attachment_url(391); ?>" alt="Kind Technology Services" />
  </header>
-<header id="banner-header-mobile">
-    <img class="banner" src="<?php echo wp_get_attachment_url(341); ?>" alt="Kind Technology Services" />
-</header>
 
 <div class="nav-bar">
 
@@ -98,20 +95,20 @@
         <a id="mobile-nav-button-plus" href="#" ><img src="<?php echo wp_get_attachment_url(336); ?>" alt="Mobile Navigation" /></a>
     </div>
 
-    <div class="tab_nav">
+    <div class="nav">
 
         <ul class="tabs">
             <li>
-                <a class="menu_link" id="home_link" href="/wp/home"><img src="<?php echo get_childTheme_url(); ?>/images/home_button.png" width="20" height="20" style="margin-right: 4px;"/>
+                <a class="menu_link" id="home_link" href="/wp/home"><img class="menu_img" src="<?php echo get_childTheme_url(); ?>/images/home_button.png" width="20" height="20" style="margin-right: 4px;"/>
                     Home</a></li>
             <li><a class="menu_link" id="about_link" href="/wp/about-us">
-                    <img src="<?php echo get_childTheme_url(); ?>/images/about_button.png" width="20" height="20" style="margin-right: 4px;"/>About Us</a></li>
+                    <img class="menu_img" src="<?php echo get_childTheme_url(); ?>/images/about_button.png" style="margin-right: 4px;"/>About Us</a></li>
             <li><a class="menu_link" id="services_link" href="/wp/services">
-                    <img src="<?php echo get_childTheme_url(); ?>/images/wrench_icon.png" width="20" height="20" style="margin-right: 4px;"/>Services</a></li>
+                    <img class="menu_img" src="<?php echo get_childTheme_url(); ?>/images/wrench_icon.png" style="margin-right: 4px;"/>Services</a></li>
             <li><a class="menu_link" id="processes_link" href="/wp/our-process">
-                    <img src="<?php echo get_childTheme_url(); ?>/images/services_button.png" width="20" height="20" style="margin-right: 4px;"/>Our Process</a></li>
+                    <img class="menu_img" src="<?php echo get_childTheme_url(); ?>/images/services_button.png" style="margin-right: 4px;"/>Our Process</a></li>
             <li><a class="menu_link" id="contact_link" href="/wp/contact-us">
-                    <img src="<?php echo get_childTheme_url(); ?>/images/contact_button.png" width="20" height="20" style="margin-right: 4px;"/>Contact Us</a></li>
+                    <img class="menu_img" src="<?php echo get_childTheme_url(); ?>/images/contact_button.png" style="margin-right: 4px;"/>Contact Us</a></li>
         </ul>
     </div>
 

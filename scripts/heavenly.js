@@ -5,6 +5,11 @@ function setHeaderDefaults() {
 }
 
 function setMobileNavigation() {
+    if ($('#mobile-nav-button-minus').is(":visible")) {
+        $('#mobile-tab-nav').show();
+    } else {
+        $('#mobile-tab-nav').hide();
+    }
     $('#mobile-nav-button-minus').click(function () {
         $('#mobile-tab-nav').hide();
         $('#mobile-nav-button-plus').show();
