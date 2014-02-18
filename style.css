@@ -437,3 +437,25 @@ a.content-link:visited {
 #socialmedia-container DIV.smc_icon_container {
     height: 10px;
 }
+
+/* PROCESSES PAGE QUESTIONS
+=================================
+*/
+#process-list .question {
+    background-color: green;
+    color: white;
+    list-style-type: none;
+    padding: 2px;
+    border-radius: 5px;
+    width: auto;
+    margin: 2px;
+}
+.question-text {
+    color: white;
+}
+.question-text:hover {
+    color: red;
+}
+#process-list .answer {
+    display: none;
+}

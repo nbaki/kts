@@ -51,7 +51,7 @@ if (is_page("Our Process")) : ?>
         <script>
             $(document).ready(function() {
                 var text = $('#q1').text();
-                alert(text);
+                //alert(text);
             });</script>
     </div>
     <div id="answer-text">
