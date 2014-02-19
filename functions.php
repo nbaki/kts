@@ -33,6 +33,11 @@ if (function_exists('register_sidebar')) {
     ));
 }
 
+function register_my_menus() {
+    register_nav_menus(array('main-menu'=> __('Navvy')));
+}
+add_action('init', 'register_my_menus');
+
 function getPermalinkForPage($page_title) {
     $page = get_page_by_title($page_title);
     return get_permalink($page->ID);

@@ -18,8 +18,6 @@
 <body <?php body_class(); ?>>
 <script>
     $(document).ready(function() {
-        //$('.nav:first').prepend("<li><img src='<?php echo wp_get_attachment_url(353); ?>' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
-        //$('.nav:last').append("<li id='last-logo'><img src='<?php echo wp_get_attachment_url(353); ?>' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
         setHeaderDefaults();
         setMobileNavigation();
     });
@@ -27,61 +25,31 @@
 <?php if (is_page('Home')) : ?>
     <script>
         $(document).ready(function () {
-            $('#home_link').css('padding-bottom', 19);
-            $('#home_link').css('border-bottom', 0);
-            $('#home_link').css('border-bottom-left-radius', 0);
-            $('#home_link').css('border-bottom-right-radius', 0);
-            $('#home_link').css('background', '#3FAD21');
-            $('.nav-wrapper').css('border-bottom', '7px solid #3FAD21');
-            $('.row-fluid').css('border-bottom', '10px solid #3FAD21');
+            setActiveTab('Home');
         });
     </script>
 <?php elseif (is_page('About Us')) : ?>
     <script>
         $(document).ready(function () {
-            $('#about_link').css('padding-bottom', 19);
-            $('#about_link').css('border-bottom', 0);
-            $('#about_link').css('background', '#3FAD21');
-            $('#about_link').css('border-bottom-left-radius', 0);
-            $('#about_link').css('border-bottom-right-radius', 0);
-            $('.nav-wrapper').css('border-bottom', '7px solid #3FAD21');
-            $('.row-fluid').css('border-bottom', '10px solid #3FAD21');
+            setActiveTab('About Us');
         });
     </script>
 <?php elseif (is_page('Services')) : ?>
     <script>
         $(document).ready(function () {
-            $('#services_link').css('padding-bottom', 19);
-            $('#services_link').css('border-bottom', 0);
-            $('#services_link').css('background', '#3FAD21');
-            $('#services_link').css('border-bottom-left-radius', 0);
-            $('#services_link').css('border-bottom-right-radius', 0);
-            $('.nav-wrapper').css('border-bottom', '7px solid #3FAD21');
-            $('.row-fluid').css('border-bottom', '10px solid #3FAD21');
+            setActiveTab('Services');
         });
     </script>
 <?php elseif (is_page('Our Process')) : ?>
     <script>
         $(document).ready(function () {
-            $('#processes_link').css('padding-bottom', 19);
-            $('#processes_link').css('border-bottom', 0);
-            $('#processes_link').css('background', '#3FAD21');
-            $('#processes_link').css('border-bottom-left-radius', 0);
-            $('#processes_link').css('border-bottom-right-radius', 0);
-            $('.nav-wrapper').css('border-bottom', '7px solid #3FAD21');
-            $('.row-fluid').css('border-bottom', '10px solid #3FAD21');
+            setActiveTab('Our Process');
         });
     </script>
 <?php elseif (is_page('Contact Us')) : ?>
     <script>
         $(document).ready(function () {
-            $('#contact_link').css('padding-bottom', 19);
-            $('#contact_link').css('border-bottom', 0);
-            $('#contact_link').css('background', '#3FAD21');
-            $('#contact_link').css('border-bottom-left-radius', 0);
-            $('#contact_link').css('border-bottom-right-radius', 0);
-            $('.nav-wrapper').css('border-bottom', '7px solid #3FAD21');
-            $('.row-fluid').css('border-bottom', '10px solid #3FAD21');
+            setActiveTab('Contact Us');
         });
     </script>
 <?php endif; ?>
