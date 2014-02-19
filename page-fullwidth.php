@@ -24,6 +24,70 @@ get_header();
     </script>
 <?php endif; ?>
 <div class="page-container">
+  <div class="nav-wrapper">
+    <div class="nav-bar">
+
+        <div class="btn-navbar">
+            <a id="mobile-nav-button-minus" href="#" style="display: none;"><img src="<?php echo wp_get_attachment_url(337); ?>" alt="Mobile Navigation" /></a>
+            <a id="mobile-nav-button-plus" href="#" ><img src="<?php echo wp_get_attachment_url(336); ?>" alt="Mobile Navigation" /></a>
+        </div>
+
+        <div class="nav">
+
+            <ul class="tabs">
+                <li>
+                    <a class="menu_link" id="home_link" href="/wp/home">
+                        <!--                    <img class="menu_img" src="--><?php //echo get_childTheme_url(); ?><!--/images/home_button.png" width="20" height="20" style="margin-right: 4px;"/>-->
+                        Home
+                    </a>
+                </li>
+                <li><a class="menu_link" id="about_link" href="/wp/about-us">
+                        <!--                    <img class="menu_img" src="--><?php //echo get_childTheme_url(); ?><!--/images/about_button.png" style="margin-right: 4px;"/>-->
+                        About Us</a></li>
+                <li><a class="menu_link" id="services_link" href="/wp/services">
+                        <!--                    <img class="menu_img" src="--><?php //echo get_childTheme_url(); ?><!--/images/wrench_icon.png" style="margin-right: 4px;"/>-->
+                        Services</a></li>
+                <li><a class="menu_link" id="processes_link" href="/wp/our-process">
+                        <!--                    <img class="menu_img" src="--><?php //echo get_childTheme_url(); ?><!--/images/services_button.png" style="margin-right: 4px;"/>-->
+                        Our Process</a></li>
+                <li><a class="menu_link" id="contact_link" href="/wp/contact-us">
+                        <!--                    <img class="menu_img" src="--><?php //echo get_childTheme_url(); ?><!--/images/contact_button.png" style="margin-right: 4px;"/>-->
+                        Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div id="mobile-tab-nav">
+            <?php
+            $args = array(
+                'theme_location' => 'primary',
+                'depth' => 3,
+                'container' => false,
+                'menu_class' => 'mobile-nav',
+                'fallback_cb' => false,
+                'walker' => new heavenly_bootstrap_walker_nav_menu()
+            );
+
+
+            wp_nav_menu($args);
+            ?>
+        </div>
+        <?php
+
+        /*
+            $args = array(
+                'theme_location' => 'primary',
+                'depth' => 3,
+                'container' => false,
+                'menu_class' => 'nav',
+                'fallback_cb' => false,
+                'walker' => new heavenly_bootstrap_walker_nav_menu()
+            );
+
+
+            wp_nav_menu($args); */
+        ?>
+    </div>
+  </div>
 <div class="content-container">
     <div class="breadcrumbs">
         <?php if(function_exists('bcn_display') && !is_page('Home'))
@@ -50,8 +114,30 @@ if (is_page("Our Process")) : ?>
     <div id="question">
         <script>
             $(document).ready(function() {
-                var text = $('#q1').text();
-                //alert(text);
+                $('#q1').click(function() {
+                    if ($('#a1').is(":visible")) {
+                        $('#a1').hide();
+                    } else {
+                        $('#a1').show();
+                    }
+                    return false;
+                });
+                $('#q2').click(function() {
+                    if ($('#a2').is(":visible")) {
+                        $('#a2').hide();
+                    } else {
+                        $('#a2').show();
+                    }
+                    return false;
+                });
+                $('#q3').click(function() {
+                    if ($('#a3').is(":visible")) {
+                        $('#a3').hide();
+                    } else {
+                        $('#a3').show();
+                    }
+                    return false;
+                });
             });</script>
     </div>
     <div id="answer-text">

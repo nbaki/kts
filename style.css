@@ -145,8 +145,8 @@ a.content-link:visited {
 */
 
 .nav-bar {
-    background-color: gray;
-    border: 1px solid white;
+    /*background-color: gray;*/
+    /*border: 1px solid white;*/
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -186,14 +186,16 @@ a.content-link:visited {
     background: #3FAD21 !important;
 }
 .menu_link {
+    vertical-align: bottom;
     color: white;
     font-weight: bold;
     font-size: 12px;
-    padding: 10px 15px 10px 15px;
+    padding: 2px 15px 5px 15px;
     margin-bottom: 0;
-    border: 2px solid white;
-    /*border-bottom: 0;*/
-    border-radius: 10px;
+    /*border: 2px solid white;*/
+
+    border-bottom: 0;
+    /*border-radius: 10px 10px 0 0;*/
     background: rgb(76,76,76); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 42%, rgba(71,71,71,1) 74%, rgba(28,28,28,1) 91%, rgba(43,43,43,1) 93%, rgba(17,17,17,1) 97%, rgba(44,44,44,1) 100%, rgba(0,0,0,1) 100%, rgba(19,19,19,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76,76,76,1)), color-stop(12%,rgba(89,89,89,1)), color-stop(42%,rgba(102,102,102,1)), color-stop(74%,rgba(71,71,71,1)), color-stop(91%,rgba(28,28,28,1)), color-stop(93%,rgba(43,43,43,1)), color-stop(97%,rgba(17,17,17,1)), color-stop(100%,rgba(44,44,44,1)), color-stop(100%,rgba(0,0,0,1)), color-stop(100%,rgba(19,19,19,1))); /* Chrome,Safari4+ */
@@ -202,6 +204,10 @@ a.content-link:visited {
     background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 42%,rgba(71,71,71,1) 74%,rgba(28,28,28,1) 91%,rgba(43,43,43,1) 93%,rgba(17,17,17,1) 97%,rgba(44,44,44,1) 100%,rgba(0,0,0,1) 100%,rgba(19,19,19,1) 100%); /* IE10+ */
     background: linear-gradient(to bottom, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 42%,rgba(71,71,71,1) 74%,rgba(28,28,28,1) 91%,rgba(43,43,43,1) 93%,rgba(17,17,17,1) 97%,rgba(44,44,44,1) 100%,rgba(0,0,0,1) 100%,rgba(19,19,19,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+}
+
+.nav-wrapper {
+    height: 100%;
 }
 
 /** FOOTER
@@ -441,16 +447,29 @@ a.content-link:visited {
 /* PROCESSES PAGE QUESTIONS
 =================================
 */
-#process-list .question {
+#process-list .question {;
+    text-align: center;
     background-color: green;
     color: white;
-    list-style-type: none;
+    /*list-style-type: none;*/
     padding: 2px;
     border-radius: 5px;
     width: auto;
     margin: 2px;
 }
-.question-text {
+
+#process-list {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#process-list * {
+    list-style-type: none;
+}
+
+.question-text p {
+    font-weight: bold;
     color: white;
 }
 .question-text:hover {
