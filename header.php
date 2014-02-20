@@ -16,47 +16,47 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<!--<script>-->
-<!--    $(document).ready(function() {-->
-<!--        setHeaderDefaults();-->
-<!--        setMobileNavigation();-->
-<!--    });-->
-<!--</script>-->
-<?php //if (is_page('Home')) : ?>
-<!--    <script>-->
-<!--        $(document).ready(function () {-->
-<!--            setActiveTab('Home');-->
-<!--        });-->
-<!--    </script>-->
-<?php //elseif (is_page('About Us')) : ?>
-<!--    <script>-->
-<!--        $(document).ready(function () {-->
-<!--            setActiveTab('About Us');-->
-<!--        });-->
-<!--    </script>-->
-<?php //elseif (is_page('Services')) : ?>
-<!--    <script>-->
-<!--        $(document).ready(function () {-->
-<!--            setActiveTab('Services');-->
-<!--        });-->
-<!--    </script>-->
-<?php //elseif (is_page('Our Process')) : ?>
-<!--    <script>-->
-<!--        $(document).ready(function () {-->
-<!--            setActiveTab('Our Process');-->
-<!--        });-->
-<!--    </script>-->
-<?php //elseif (is_page('Contact Us')) : ?>
-<!--    <script>-->
-<!--        $(document).ready(function () {-->
-<!--            setActiveTab('Contact Us');-->
-<!--        });-->
-<!--    </script>-->
-<?php //endif; ?>
- <header id="banner-header">
-     <p>Kind Technology Services</p>
-<!--    <img class="banner" src="--><?php //echo wp_get_attachment_url(391); ?><!--" alt="Kind Technology Services" />-->
- </header>
+<script>
+    $(document).ready(function() {
+        setHeaderDefaults();
+        setMobileNavigation();
+    });
+</script>
+<?php if (is_page('Home')) : ?>
+    <script>
+        $(document).ready(function () {
+            setActiveTab('Home');
+        });
+    </script>
+<?php elseif (is_page('About Us')) : ?>
+    <script>
+        $(document).ready(function () {
+            setActiveTab('About Us');
+        });
+    </script>
+<?php elseif (is_page('Services')) : ?>
+    <script>
+        $(document).ready(function () {
+            setActiveTab('Services');
+        });
+    </script>
+<?php elseif (is_page('Our Process')) : ?>
+    <script>
+        $(document).ready(function () {
+            setActiveTab('Our Process');
+        });
+    </script>
+<?php elseif (is_page('Contact Us')) : ?>
+    <script>
+        $(document).ready(function () {
+            setActiveTab('Contact Us');
+        });
+    </script>
+<?php endif; ?>
+<!-- <header id="banner-header">-->
+<!--     <p>Kind Technology Services</p>-->
+<!--    <img class="banner" src="--><?php ////echo wp_get_attachment_url(391); ?><!--<!--" alt="Kind Technology Services" />-->
+<!-- </header>-->
 <div class="nav-wrapper">
     <div class="nav-bar">
 
