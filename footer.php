@@ -37,8 +37,5 @@
 <!--</div>-->
 
 </div>
-<div id="grass">
-    <p>fo</p>
-</div>
 </body>
 </html>

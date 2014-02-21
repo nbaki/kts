@@ -20,6 +20,7 @@
     $(document).ready(function() {
         setHeaderDefaults();
         setMobileNavigation();
+        $('.tabs li:first').attr("id", "home");
     });
 </script>
 <?php if (is_page('Home')) : ?>
@@ -54,18 +55,31 @@
     </script>
 <?php endif; ?>
  <header id="banner-header">
-     <p>Kind Technology Services</p>
-<!--    <img class="banner" src="" alt="Kind Technology Services" />-->
+    <img class="banner" src="<?php echo wp_get_attachment_url(407);?>" alt="Kind Technology Services" />
  </header>
 <div class="nav-wrapper">
+    <div class="btn-navbar">
+        <a id="mobile-nav-button-minus" href="#" style="display: none;"><img
+                src="<?php echo wp_get_attachment_url(337); ?>" alt="Mobile Navigation"/></a>
+        <a id="mobile-nav-button-plus" href="#"><img src="<?php echo wp_get_attachment_url(336); ?>"
+                                                     alt="Mobile Navigation"/></a>
+    </div>
+    <div id="mobile-tab-nav">
+        <?php
+        $args = array(
+            'theme_location' => 'primary',
+            'depth' => 3,
+            'container' => false,
+            'menu_class' => 'mobile-nav',
+            'fallback_cb' => false,
+            'walker' => new heavenly_bootstrap_walker_nav_menu()
+        );
+        wp_nav_menu($args);
+        ?>
+    </div>
     <div class="nav-bar">
 
-        <div class="btn-navbar">
-            <a id="mobile-nav-button-minus" href="#" style="display: none;"><img
-                    src="<?php echo wp_get_attachment_url(337); ?>" alt="Mobile Navigation"/></a>
-            <a id="mobile-nav-button-plus" href="#"><img src="<?php echo wp_get_attachment_url(336); ?>"
-                                                         alt="Mobile Navigation"/></a>
-        </div>
+
 
         <div class="nav">
 
@@ -98,19 +112,7 @@
             </ul>
         </div>
 
-        <div id="mobile-tab-nav">
-            <?php
-            $args = array(
-                'theme_location' => 'primary',
-                'depth' => 3,
-                'container' => false,
-                'menu_class' => 'mobile-nav',
-                'fallback_cb' => false,
-                'walker' => new heavenly_bootstrap_walker_nav_menu()
-            );
-            wp_nav_menu($args);
-            ?>
-        </div>
+
     </div>
 </div>
 <?php
