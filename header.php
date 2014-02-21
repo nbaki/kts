@@ -53,10 +53,10 @@
         });
     </script>
 <?php endif; ?>
-<!-- <header id="banner-header">-->
-<!--     <p>Kind Technology Services</p>-->
-<!--    <img class="banner" src="--><?php ////echo wp_get_attachment_url(391); ?><!--<!--" alt="Kind Technology Services" />-->
-<!-- </header>-->
+ <header id="banner-header">
+     <p>Kind Technology Services</p>
+<!--    <img class="banner" src="" alt="Kind Technology Services" />-->
+ </header>
 <div class="nav-wrapper">
     <div class="nav-bar">
 

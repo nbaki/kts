@@ -15,17 +15,20 @@ body, html {
 }
 /** BODY **/
 body {
-    background: #b4ddb4; /* Old browsers */
-    background: -moz-linear-gradient(top,  #b4ddb4 0%, #002400 0%, #ffffff 0%, #83c783 100%, #ffffff 100%, #005700 100%) no-repeat; /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4ddb4), color-stop(0%,#002400), color-stop(0%,#ffffff), color-stop(100%,#83c783), color-stop(100%,#ffffff), color-stop(100%,#005700)) no-repeat; /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #b4ddb4 0%,#002400 0%,#ffffff 0%,#83c783 100%,#ffffff 100%,#005700 100%) no-repeat; /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #b4ddb4 0%,#002400 0%,#ffffff 0%,#83c783 100%,#ffffff 100%,#005700 100%) no-repeat; /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #b4ddb4 0%,#002400 0%,#ffffff 0%,#83c783 100%,#ffffff 100%,#005700 100%) no-repeat; /* IE10+ */
-    background: linear-gradient(to bottom,  #b4ddb4 0%,#002400 0%,#ffffff 0%,#83c783 100%,#ffffff 100%,#005700 100%) no-repeat; /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#005700',GradientType=0 ) no-repeat; /* IE6-9 */
+    background: url(images/grass.jpg) no-repeat;
 
-    background-size: cover;
+    /*background: #b4ddb4; *//* Old browsers */
+    /*background: -moz-linear-gradient(top,  #b4ddb4 0%, #002400 0%, #ffffff 0%, #83c783 100%, #ffffff 100%, #005700 100%) no-repeat; *//* FF3.6+ */
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4ddb4), color-stop(0%,#002400), color-stop(0%,#ffffff), color-stop(100%,#83c783), color-stop(100%,#ffffff), color-stop(100%,#005700)) no-repeat; *//* Chrome,Safari4+ */
+    /*background: -webkit-linear-gradient(top,  #b4ddb4 0%,#002400 0%,#ffffff 0%,#83c783 100%,#ffffff 100%,#005700 100%) no-repeat; *//* Chrome10+,Safari5.1+ */
+    /*background: -o-linear-gradient(top,  #b4ddb4 0%,#002400 0%,#ffffff 0%,#83c783 100%,#ffffff 100%,#005700 100%) no-repeat; *//* Opera 11.10+ */
+    /*background: -ms-linear-gradient(top,  #b4ddb4 0%,#002400 0%,#ffffff 0%,#83c783 100%,#ffffff 100%,#005700 100%) no-repeat; *//* IE10+ */
+    /*background: linear-gradient(to bottom,  #b4ddb4 0%,#002400 0%,#ffffff 0%,#83c783 100%,#ffffff 100%,#005700 100%) no-repeat; *//* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#005700',GradientType=0 ) no-repeat; *//* IE6-9 */
+
+    background-size: 100% 100%;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
 }
 
 h1:not(#contact-title) {
@@ -58,7 +61,7 @@ p {
 
 #banner-header {
     position: absolute;
-    background-color: #009966;
+    /*background: url(images/grass.jpg);*/
     height: 200px;
     top: 0;
     width: 100%;
@@ -93,6 +96,17 @@ p {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    z-index: 1;
+}
+
+#grass {
+    position: fixed;
+    z-index: 0;
+    vertical-align: bottom;;
+    /*bottom: 0;*/
+    right: 0;
+    /*height: 200px;*/
+    background: url(images/grass.jpg) no-repeat;
 }
 .content-container {
     position: relative;
@@ -218,13 +232,13 @@ a.content-link:visited {
     background: #3FAD21 !important;
 }
 .menu_link {
-    border-right: 1px solid white;
-    border-left: 1px solid white;
+    /*border-right: 1px solid white;*/
+    /*border-left: 1px solid white;*/
     vertical-align: bottom;
     color: white;
     font-weight: bold;
     font-size: 15px;
-    padding: 2px 15px 5px 15px;
+    padding: 2px 15px 0px 15px;
     margin-bottom: 0;
     /*border: 2px solid white;*/
 
@@ -248,7 +262,7 @@ a.content-link:visited {
     position: relative;
     /*border-bottom: 1px solid green;*/
     border-radius: 15px 15px 0 0;
-    background-color: white;
+    background-color: #006600;
     padding-top: 1px;
     margin-left: auto;
     margin-right: auto;
