@@ -20,7 +20,6 @@
     $(document).ready(function() {
         setHeaderDefaults();
         setMobileNavigation();
-        $('.tabs li:first').attr("id", "home");
     });
 </script>
 <?php if (is_page('Home')) : ?>
@@ -78,43 +77,17 @@
         ?>
     </div>
     <div class="nav-bar">
-
-
-
-        <div class="nav">
-
-            <ul class="tabs">
-                <li>
-                    <a class="menu_link" id="home_link" href="/wp/home">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a class="menu_link" id="about_link" href="/wp/about-us">
-                        About Us
-                    </a>
-                </li>
-                <li>
-                    <a class="menu_link" id="services_link" href="/wp/services">
-                        Services
-                    </a>
-                </li>
-                <li>
-                    <a class="menu_link" id="processes_link" href="/wp/our-process">
-                        Our Process
-                    </a>
-                </li>
-                <li>
-                    <a class="menu_link" id="contact_link" href="/wp/contact-us">
-                        Contact Us
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-
+        <?php
+        $args = array(
+            'theme_location' => 'primary',
+            'depth' => 0,
+            'container' => 'div',
+            'container_class' => 'nav',
+            'menu_class' => 'tabs',
+            'fallback_cb' => false,
+            'walker' => new heavenly_bootstrap_walker_nav_menu()
+        );
+        wp_nav_menu($args);
+        ?>
     </div>
 </div>
-<?php
-if(is_front_page()) //get_template_part('homepage','top');
-?>

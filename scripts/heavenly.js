@@ -1,6 +1,19 @@
+/**
+ * @author Nasem Baki <nbaki@kindtechnj.com>
+ * @version 2.0
+ */
 function setHeaderDefaults() {
     $('img').bind('contextmenu', function (e) {
         return false;
+    });
+    $('.tabs li:first').attr("id", "home");
+    $('.tabs li a').attr("class", "menu_link");
+    var listItems = $(".tabs li");
+    listItems.each(function(index, li) {
+       var menu_title = $(li).text().trim().toLowerCase();
+       menu_title = menu_title.replace(" ", "_");
+       var anchor = $(li).find("a");
+       $(anchor).attr("id", menu_title+"_link");
     });
 }
 
@@ -85,43 +98,43 @@ function setActiveTab(page) {
             $('#home_link').css('border-bottom', 0);
             $('#home_link').css('border-bottom-left-radius', 0);
             $('#home_link').css('border-bottom-right-radius', 0);
-            $('#home_link').css('background', '#006600');
+            $('#home_link').css('background', '#006600 !important');
             $('.nav-wrapper').css('border-bottom', '7px solid #006600');
             $('.page-container').css('border-bottom', '10px solid #006600');
     }
     else if (page == 'About Us') {
-            $('#about_link').css('padding-bottom', 7);
-            $('#about_link').css('border-bottom', 0);
-            $('#about_link').css('background', '#006600');
-            $('#about_link').css('border-bottom-left-radius', 0);
-            $('#about_link').css('border-bottom-right-radius', 0);
+            $('#about_us_link').css('padding-bottom', 7);
+            $('#about_us_link').css('border-bottom', 0);
+            $('#about_us_link').css('background', '#006600 !important');
+            $('#about_us_link').css('border-bottom-left-radius', 0);
+            $('#about_us_link').css('border-bottom-right-radius', 0);
             $('.nav-wrapper').css('border-bottom', '7px solid #006600');
             $('.page-container').css('border-bottom', '10px solid #006600');
     }
     else if (page == 'Our Process') {
-            $('#processes_link').css('padding-bottom', 7);
-            $('#processes_link').css('border-bottom', 0);
-            $('#processes_link').css('background', '#006600');
-            $('#processes_link').css('border-bottom-left-radius', 0);
-            $('#processes_link').css('border-bottom-right-radius', 0);
+            $('#our_process_link').css('padding-bottom', 7);
+            $('#our_process_link').css('border-bottom', 0);
+            $('#our_process_link').css('background', '#006600 !important');
+            $('#our_process_link').css('border-bottom-left-radius', 0);
+            $('#our_process_link').css('border-bottom-right-radius', 0);
             $('.nav-wrapper').css('border-bottom', '7px solid #006600');
             $('.page-container').css('border-bottom', '10px solid #006600');
     }
     else if (page == 'Services') {
             $('#services_link').css('padding-bottom', 7);
             $('#services_link').css('border-bottom', 0);
-            $('#services_link').css('background', '#006600');
+            $('#services_link').css('background', '#006600 !important');
             $('#services_link').css('border-bottom-left-radius', 0);
             $('#services_link').css('border-bottom-right-radius', 0);
             $('.nav-wrapper').css('border-bottom', '7px solid #006600');
             $('.page-container').css('border-bottom', '10px solid #006600');
     }
     else if (page == 'Contact Us') {
-            $('#contact_link').css('padding-bottom', 7);
-            $('#contact_link').css('border-bottom', 0);
-            $('#contact_link').css('background', '#006600');
-            $('#contact_link').css('border-bottom-left-radius', 0);
-            $('#contact_link').css('border-bottom-right-radius', 0);
+            $('#contact_us_link').css('padding-bottom', 7);
+            $('#contact_us_link').css('border-bottom', 0);
+            $('#contact_us_link').css('background', '#006600 !important');
+            $('#contact_us_link').css('border-bottom-left-radius', 0);
+            $('#contact_us_link').css('border-bottom-right-radius', 0);
             $('.nav-wrapper').css('border-bottom', '7px solid #006600');
             $('.page-container').css('border-bottom', '10px solid #006600');
 

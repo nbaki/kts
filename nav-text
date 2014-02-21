@@ -60,3 +60,36 @@
     wp_nav_menu($args); */
     ?>
 </div>
+
+
+
+<!--        <div class="nav">-->
+<!---->
+<!--            <ul class="tabs">-->
+<!--                <li>-->
+<!--                    <a class="menu_link" id="home_link" href="/wp/home">-->
+<!--                        Home-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a class="menu_link" id="about_link" href="/wp/about-us">-->
+<!--                        About Us-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a class="menu_link" id="services_link" href="/wp/services">-->
+<!--                        Services-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a class="menu_link" id="processes_link" href="/wp/our-process">-->
+<!--                        Our Process-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a class="menu_link" id="contact_link" href="/wp/contact-us">-->
+<!--                        Contact Us-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->

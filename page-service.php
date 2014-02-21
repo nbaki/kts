@@ -30,7 +30,7 @@ get_header();
                                 </ul>
                             </div>
                             <table class="service-table">
-                                <tr class="even-row">
+                                <tr>
                                     <td>
                                         <div>
                                             <img class="service-img" src="<?php echo wp_get_attachment_url(253); ?>"
@@ -48,7 +48,7 @@ get_header();
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="even-row">
+                                <tr>
                                     <td>
                                         <div>
                                             <img class="service-img" src="<?php echo wp_get_attachment_url(254); ?>"
@@ -57,7 +57,7 @@ get_header();
                                         </div>
                                     </td>
                                     <td id="dev">
-                                        <div class="right-content">
+                                        <div>
                                             <h4><?php echo get_the_title(234); ?></h4>
 
                                             <p>
@@ -66,10 +66,10 @@ get_header();
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="even-row">
+                                <tr>
                                     <td>
                                         <div>
-                                            <img class="service-img" width="100%"
+                                            <img class="service-img" id="brand-img"
                                                  src="<?php echo wp_get_attachment_url(246); ?>"
                                                  title="Kind Technology Marketing"
                                                  alt="Kind Technology Marketing"/>
@@ -85,7 +85,7 @@ get_header();
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="even-row">
+                                <tr>
                                     <td>
                                         <div>
                                             <img class="service-img" src="<?php echo wp_get_attachment_url(251); ?>"

@@ -1,6 +1,7 @@
 <?php
 /*
-Template Name: Full Width 
+Template Name: Full Width
+Author: Nasem Baki
 */
 get_header();
 ?>
@@ -36,8 +37,6 @@ elseif (is_page('About Us')) : ?>
             </div>
 
             <div class="row-fluid">
-
-
                 <div class="span12">
                     <div id="single-post_post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <?php
@@ -52,6 +51,7 @@ elseif (is_page('About Us')) : ?>
                                                 $('#a1').hide();
                                             } else {
                                                 $('#a1').show();
+                                                $('#a1 p').css("color", "#0066CC");
                                             }
                                             return false;
                                         });
@@ -60,6 +60,7 @@ elseif (is_page('About Us')) : ?>
                                                 $('#a2').hide();
                                             } else {
                                                 $('#a2').show();
+                                                $('#a2 p').css("color", "#0066CC");
                                             }
                                             return false;
                                         });
@@ -68,13 +69,11 @@ elseif (is_page('About Us')) : ?>
                                                 $('#a3').hide();
                                             } else {
                                                 $('#a3').show();
+                                                $('#a3 p').css("color", "#0066CC");
                                             }
                                             return false;
                                         });
                                     });</script>
-                            </div>
-                            <div id="answer-text">
-
                             </div>
                         <?php endif; ?>
                         <?php while (have_posts()): the_post(); ?>
