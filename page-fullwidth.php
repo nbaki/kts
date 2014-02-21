@@ -86,7 +86,7 @@ elseif (is_page('About Us')) : ?>
                                         the_title();
                                     } else {
                                         ?>
-                                        Welcome to Kind Technology Services!
+                                        <span id="welcome-text">Welcome to Kind Technology Services!</span>
                                     <?php } ?>
                                 </h1>
 

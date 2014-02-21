@@ -55,7 +55,7 @@
     </script>
 <?php endif; ?>
  <header id="banner-header">
-    <img class="banner" src="<?php echo wp_get_attachment_url(407);?>" alt="Kind Technology Services" />
+    <img class="banner" src="<?php echo wp_get_attachment_url(413);?>" alt="Kind Technology Services" />
  </header>
 <div class="nav-wrapper">
     <div class="btn-navbar">

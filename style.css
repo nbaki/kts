@@ -9,37 +9,34 @@ Version:        2.0.0
 */
 
 @import url("../heavenly/style.css");
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:500|Prosto+One|Varela+Round|Satisfy);
 
-body, html {
-    min-height: 100%;
+html {
+    position: relative;
+    overflow-y: scroll;
 }
+
 /** BODY **/
 body {
-    /*background-color: white;*/
-    /*background: url(images/clouds.jpg) no-repeat;*/
-
-    /*background: #b4ddb4; *//**//* Old browsers */
-    background: #006e2e; /* Old browsers */
-    background: -moz-linear-gradient(top,  #006e2e 0%, #ffffff 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006e2e), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #006e2e 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #006e2e 0%,#ffffff 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #006e2e 0%,#ffffff 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #006e2e 0%,#ffffff 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-
-
-    background-size: 100% 100%;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
+}
+h1, h4 {
+    font-family: 'Prosto One', cursive;
 }
 
 h1:not(#contact-title) {
     text-align: center;
 }
 
-p {
-    font-size: 12px !important;
+#welcome-text {
+    font-family: 'Satisfy', cursive;
+}
+
+p, .menu_link {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px !important;
 }
 /* IMAGES
 =================================
@@ -64,23 +61,14 @@ p {
 */
 
 #banner-header {
+    background: #006e2e; /* Old browsers */
+    position: absolute;
+    border-bottom: 2px solid green;
     display: block;
     text-align: center;
-    /*position: absolute;*/
-    /*background: url(images/grass.jpg);*/
-    /*background: #1e5799; *//* Old browsers */
-    /*background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 0%, #fffcfc 100%, #207cca 100%); *//* FF3.6+ */
-    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#2989d8), color-stop(100%,#fffcfc), color-stop(100%,#207cca)); *//* Chrome,Safari4+ */
-    /*background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 0%,#fffcfc 100%,#207cca 100%); *//* Chrome10+,Safari5.1+ */
-    /*background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 0%,#fffcfc 100%,#207cca 100%); *//* Opera 11.10+ */
-    /*background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 0%,#fffcfc 100%,#207cca 100%); *//* IE10+ */
-    /*background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 0%,#fffcfc 100%,#207cca 100%); *//* W3C */
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=0 ); *//* IE6-9 */
-
-    height: 200px;
+    height: 350px;
     top: 0;
     width: 100%;
-    /*width: 60%;*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -91,20 +79,14 @@ p {
     font-size: 20px !important;
 }
 
-
-/* IMAGES
-============
-*/
-
-
-
-
-/* Main page and content containers */
+/* Main page and content containers
+ =============================================
+ */
 
 .page-container {
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;
+    -moz-box-shadow:    3px 3px 1px 6px black;
+    -webkit-box-shadow: 3px 3px 1px 6px black;
+    box-shadow:         3px 3px 1px 6px black;
     position: relative;
     background-color: white;
     width: 60%;
@@ -246,7 +228,7 @@ a.content-link:visited {
     color: white;
     font-weight: bold;
     font-size: 15px;
-    padding: 2px 15px 5px 15px;
+    padding: 2px 15px 6px 15px;
     margin-bottom: 0;
     /*border: 2px solid white;*/
 
@@ -264,9 +246,9 @@ a.content-link:visited {
 }
 
 .nav-wrapper {
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;
+    -moz-box-shadow:    3px 3px 1px 6px black;
+    -webkit-box-shadow: 3px 3px 1px 6px black;
+    box-shadow:         3px 3px 1px 6px black;
     position: relative;
     /*border-bottom: 1px solid green;*/
     border-radius: 15px 15px 0 0;
@@ -274,7 +256,7 @@ a.content-link:visited {
     padding-top: 1px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 210px;
     width: 60%;
     height: 24px;
     z-index: 2;
@@ -284,9 +266,9 @@ a.content-link:visited {
 =============================================
 **/
 .footer-area {
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;
+    -moz-box-shadow:    3px 3px 1px 0px black;
+    -webkit-box-shadow: 3px 3px 1px 0px black;
+    box-shadow:         3px 3px 1px 0px black;
     border-radius: 0 0 15px 15px;
     color: white;
     background-color: #444444;
@@ -400,6 +382,28 @@ a.content-link:visited {
 
 }
 @media (max-width: 1000px) {
+    #banner-header {
+        background-color:transparent;
+        position: relative;
+    }
+    body {
+        /* Old browser */
+        background: #006e2e;
+        /*FF3.6+*/
+        background: -moz-linear-gradient(top,  #006e2e 0%, #ffffff 100%);
+        /*Chrome,Safari4+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006e2e), color-stop(100%,#ffffff));
+        /*  Chrome10+,Safari5.1+ */
+        background: -webkit-linear-gradient(top,  #006e2e 0%,#ffffff 100%);
+        /*   Opera 11.10+ */
+        background: -o-linear-gradient(top,  #006e2e 0%,#ffffff 100%);
+        /*   IE10+ */
+        background: -ms-linear-gradient(top,  #006e2e 0%,#ffffff 100%);
+        /*   W3C */
+        background: linear-gradient(to bottom,  #006e2e 0%,#ffffff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', endColorstr='#ffffff',GradientType=0 );
+    }
+
     #checklist-guy, #last-logo {
         display: none;
     }
@@ -412,6 +416,11 @@ a.content-link:visited {
     .nav-bar {
         right: 0;
     }
+
+    .nav-wrapper {
+        margin-top: 1px;
+    }
+
     #process-flow {
         text-align: center;
     }
@@ -428,6 +437,7 @@ a.content-link:visited {
     .page-container, .nav-wrapper {
         -moz-box-shadow:    3px 3px 3px 6px black;
         -webkit-box-shadow: 3px 3px 3px 6px black;
+        box-shadow:         3px 3px 3px 6px black;
     }
 
     #socialmedia-container div.smc_icon_container {
