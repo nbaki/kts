@@ -16,6 +16,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php error_reporting(0); ?>
 <script>
     $(document).ready(function() {
         setHeaderDefaults();
