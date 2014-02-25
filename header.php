@@ -16,44 +16,27 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<?php error_reporting(0); ?>
+
 <script>
     $(document).ready(function() {
         setHeaderDefaults();
         setMobileNavigation();
     });
 </script>
-<?php if (is_page('Home')) : ?>
-    <script>
-        $(document).ready(function () {
-            setActiveTab('Home');
-        });
-    </script>
-<?php elseif (is_page('About Us')) : ?>
-    <script>
-        $(document).ready(function () {
-            setActiveTab('About Us');
-        });
-    </script>
-<?php elseif (is_page('Services')) : ?>
-    <script>
-        $(document).ready(function () {
-            setActiveTab('Services');
-        });
-    </script>
-<?php elseif (is_page('Our Process')) : ?>
-    <script>
-        $(document).ready(function () {
-            setActiveTab('Our Process');
-        });
-    </script>
-<?php elseif (is_page('Contact Us')) : ?>
-    <script>
-        $(document).ready(function () {
-            setActiveTab('Contact Us');
-        });
-    </script>
-<?php endif; ?>
+<?php
+    $menus = wp_get_nav_menus();
+    $menu_items = wp_get_nav_menu_items($menus[0]);
+
+    foreach ($menu_items as $menu_item) {
+        if (is_page($menu_item->title)) : ?>
+            <script>
+                $(document).ready(function() {
+                    setActiveTab("<?php echo $menu_item->title; ?>");
+                });
+            </script>
+        <?php endif; ?>
+<?php } ?>
+
  <header id="banner-header">
     <img class="banner" src="<?php echo wp_get_attachment_url(413);?>" alt="Kind Technology Services" />
  </header>
@@ -61,8 +44,7 @@
     <div class="btn-navbar">
         <a id="mobile-nav-button-minus" href="#" style="display: none;"><img
                 src="<?php echo wp_get_attachment_url(337); ?>" alt="Mobile Navigation"/></a>
-        <a id="mobile-nav-button-plus" href="#"><img src="<?php echo wp_get_attachment_url(336); ?>"
-                                                     alt="Mobile Navigation"/></a>
+        <a id="mobile-nav-button-plus" href="#"><img src="<?php echo wp_get_attachment_url(336); ?>" alt="Mobile Navigation"/></a>
     </div>
     <div id="mobile-tab-nav">
         <?php

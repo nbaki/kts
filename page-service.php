@@ -57,7 +57,7 @@ get_header();
                                         </div>
                                     </td>
                                     <td id="dev">
-                                        <div>
+                                        <div class="right-content">
                                             <h4><?php echo get_the_title(234); ?></h4>
 
                                             <p>
@@ -140,6 +140,4 @@ get_header();
             </div>
         </div>
     </div>
-
-
 <?php get_footer(); ?>

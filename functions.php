@@ -1,5 +1,5 @@
 <?php
-//var_dump(curPageURL());exit;
+
 if (strpos($_SERVER['SERVER_NAME'], 'sourendev') !== false) {
     error_reporting(E_ALL);
 } else {

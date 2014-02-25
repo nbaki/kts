@@ -7,7 +7,6 @@
 get_header();
 
 ?>
-
     <div class="page-container">
         <div class="content-container">
             <div class="breadcrumbs">

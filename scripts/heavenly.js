@@ -140,3 +140,33 @@ function setActiveTab(page) {
 
     }
 }
+
+function processQuestions() {
+    $('#q1').click(function () {
+        if ($('#a1').is(":visible")) {
+            $('#a1').hide();
+        } else {
+            $('#a1').show();
+            $('#a1 p').css("color", "#0066CC");
+        }
+        return false;
+    });
+    $('#q2').click(function () {
+        if ($('#a2').is(":visible")) {
+            $('#a2').hide();
+        } else {
+            $('#a2').show();
+            $('#a2 p').css("color", "#0066CC");
+        }
+        return false;
+    });
+    $('#q3').click(function () {
+        if ($('#a3').is(":visible")) {
+            $('#a3').hide();
+        } else {
+            $('#a3').show();
+            $('#a3 p').css("color", "#0066CC");
+        }
+        return false;
+    });
+}
