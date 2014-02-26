@@ -46,12 +46,12 @@ p, .menu_link {
 .banner {
     text-align: center;
     width: 40%;
-    height: 200px;
+    /*height: 200px;*/
 }
 
 #brand-img {
     width: 100%;
-    height: 260px;
+    height: 200px;
 }
 
 .service-img {
@@ -59,13 +59,13 @@ p, .menu_link {
 }
 
 /* HEADER
-=============
+=============#7dc897
 */
 
 #banner-header {
-    background: #006e2e; /* Old browsers */
+    background: #00ac5d; /* Old browsers */
     position: absolute;
-    border-bottom: 2px solid #E8E819;
+    border-bottom: 2px solid green;
     display: block;
     text-align: center;
     height: 350px;
