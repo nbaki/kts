@@ -15,6 +15,33 @@ Version:        2.0.0
 =============================================
 **/
 
+html {
+    min-height: 100%;
+}
+
+body {
+    background-color: white;
+    /* Old browser */
+    /*background: #006e2e;*/
+    /*FF3.6+*/
+    /*background: -moz-linear-gradient(top,  #00ac5d 0%, #ffffff 100%);*/
+    /*Chrome,Safari4+ */
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ac5d), color-stop(100%,#ffffff));*/
+    /*  Chrome10+,Safari5.1+ */
+    /*background: -webkit-linear-gradient(top,  #00ac5d 0%,#ffffff 100%);*/
+    /*   Opera 11.10+ */
+    /*background: -o-linear-gradient(top,  #00ac5d 0%,#ffffff 100%);*/
+    /*   IE10+ */
+    /*background: -ms-linear-gradient(top,  #00ac5d 0%,#ffffff 100%);*/
+    /*   W3C */
+    /*background: linear-gradient(to bottom,  #00ac5d 0%,#ffffff 100%);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ac5d', endColorstr='#ffffff',GradientType=0 );*/
+
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    min-height: 100%;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Prosto One', cursive;
 }
@@ -59,16 +86,16 @@ p, .menu_link {
 }
 
 /* HEADER
-=============#7dc897
+=============
 */
 
 #banner-header {
-    background: #00ac5d; /* Old browsers */
-    position: absolute;
+    background: #006e2e; /* Old browsers */
+    position: relative;
     border-bottom: 2px solid green;
     display: block;
     text-align: center;
-    height: 250px;
+    height: auto;
     top: 0;
     width: 100%;
     margin-left: auto;
@@ -240,7 +267,7 @@ a.content-link:visited {
     padding-top: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 175px;
+    margin-top: 0;
     width: 70%;
     height: 24px;
     z-index: 2;
@@ -392,7 +419,7 @@ a.content-link:visited {
 }
 
 #socialmedia-container DIV.smc_icon_container {
-    height: 10px;
+    /*height: 10px;*/
 }
 
 /* MISCELLANEOUS
@@ -445,33 +472,29 @@ MOBILE LAYOUTS
 
 }
 @media (max-width: 1000px) {
+    body {
+        /* Old browser */
+        background: #006e2e;
+        /*FF3.6+*/
+        background: -moz-linear-gradient(top,  #00ac5d 0%, #ffffff 100%);
+        /*Chrome,Safari4+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ac5d), color-stop(100%,#ffffff));
+        /*  Chrome10+,Safari5.1+ */
+        background: -webkit-linear-gradient(top,  #00ac5d 0%,#ffffff 100%);
+        /*   Opera 11.10+ */
+        background: -o-linear-gradient(top,  #00ac5d 0%,#ffffff 100%);
+        /*   IE10+ */
+        background: -ms-linear-gradient(top,  #00ac5d 0%,#ffffff 100%);
+        /*   W3C */
+        background: linear-gradient(to bottom,  #00ac5d 0%,#ffffff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ac5d', endColorstr='#ffffff',GradientType=0 );
+    }
+
     #banner-header {
         background-color:transparent;
         position: relative;
         height: auto;
         border-bottom: 0;
-    }
-
-    body {
-        /* Old browser */
-        background: #006e2e;
-        /*FF3.6+*/
-        background: -moz-linear-gradient(top,  #006e2e 0%, #ffffff 100%);
-        /*Chrome,Safari4+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006e2e), color-stop(100%,#ffffff));
-        /*  Chrome10+,Safari5.1+ */
-        background: -webkit-linear-gradient(top,  #006e2e 0%,#ffffff 100%);
-        /*   Opera 11.10+ */
-        background: -o-linear-gradient(top,  #006e2e 0%,#ffffff 100%);
-        /*   IE10+ */
-        background: -ms-linear-gradient(top,  #006e2e 0%,#ffffff 100%);
-        /*   W3C */
-        background: linear-gradient(to bottom,  #006e2e 0%,#ffffff 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', endColorstr='#ffffff',GradientType=0 );
-
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 100%;
     }
 
     #checklist-guy {
@@ -496,6 +519,11 @@ MOBILE LAYOUTS
 
     .btn-navbar {
         margin-top: 5px;
+    }
+
+    #socialmedia-container div.smc_icon_container {
+        margin: 0 !important;
+        width: 20px;
     }
 }
 
