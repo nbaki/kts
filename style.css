@@ -68,7 +68,7 @@ p, .menu_link {
     border-bottom: 2px solid green;
     display: block;
     text-align: center;
-    height: 350px;
+    height: 250px;
     top: 0;
     width: 100%;
     margin-left: auto;
@@ -92,7 +92,7 @@ p, .menu_link {
     box-shadow:         3px 3px 1px 6px black;
     position: relative;
     background-color: white;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
@@ -221,27 +221,27 @@ a.content-link:visited {
 
 .menu_link {
     vertical-align: bottom;
-    color: white;
+    color: #006600;
     font-weight: bold;
     font-size: 15px;
-    padding: 2px 15px 6px 15px;
+    padding: 1px 13px 6px 15px;
     margin-bottom: 0;
     border-bottom: 0;
-    background-color: #3FAD21;
+    background-color: white;
 }
 
 .nav-wrapper {
-    -moz-box-shadow:    3px 3px 1px 6px black;
-    -webkit-box-shadow: 3px 3px 1px 6px black;
-    box-shadow:         3px 3px 1px 6px black;
+    -moz-box-shadow:    3px 2px 1px 6px black;
+    -webkit-box-shadow: 3px 2px 1px 6px black;
+    box-shadow:         3px 2px 1px 6px black;
     position: relative;
     border-radius: 15px 15px 0 0;
-    background-color: #3FAD21;
-    padding-top: 1px;
+    background-color: white;
+    padding-top: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 210px;
-    width: 60%;
+    margin-top: 175px;
+    width: 70%;
     height: 24px;
     z-index: 2;
 }
@@ -256,7 +256,7 @@ a.content-link:visited {
     border-radius: 0 0 15px 15px;
     color: white;
     background-color: #444444;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 5px solid black;
@@ -478,7 +478,11 @@ MOBILE LAYOUTS
         display: none;
     }
 
-    .footer-area, .page-container, #banner-header, .nav-bar, .nav-wrapper, .banner {
+    .page-container, .footer-area, .nav-wrapper, .banner {
+        width: 80%;
+    }
+
+    #banner-header {
         width: auto;
     }
 
@@ -584,7 +588,7 @@ MOBILE LAYOUTS
     }
 
     .banner, #banner-header {
-        width: 100%;
+        width: 80%;
         height: 100px;
     }
 }
