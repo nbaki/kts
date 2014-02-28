@@ -100,7 +100,7 @@ p, .menu_link {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 6px;
+    /*padding-top: 6px;*/
 }
 
 #banner-header p {
@@ -438,6 +438,30 @@ a.content-link:visited {
     background-color: #E8E819;
 }
 
+.multi-left {
+    background-color: greenyellow;
+    float:left;
+    width: 15%;
+    height: 200px;
+}
+
+.multi-right {
+    background-color: greenyellow;
+
+    float: left;
+    width: 15%;
+    height: 200px;
+
+}
+
+.image {
+    float: left;
+    margin: 0 auto;
+    width: 70%;
+    height: 200px;
+
+}
+
 /* MEDIA QUERIES
 ============================================================
 
@@ -502,7 +526,7 @@ MOBILE LAYOUTS
     }
 
     .page-container, .footer-area, .nav-wrapper, .banner {
-        width: 80%;
+        width: 100%;
     }
 
     #banner-header {
@@ -554,9 +578,8 @@ MOBILE LAYOUTS
 
     .btn-navbar {
         clear: both;
-        margin-bottom: 5px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 5px auto 5px auto;
+        padding-top: 3px;
         text-align: center;
         display: block;
     }
@@ -616,7 +639,7 @@ MOBILE LAYOUTS
     }
 
     .banner, #banner-header {
-        width: 80%;
+        width: 100%;
         height: 100px;
     }
 }
