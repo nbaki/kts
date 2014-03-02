@@ -15,31 +15,9 @@ Version:        2.0.0
 =============================================
 **/
 
-html {
-    min-height: 100%;
-}
-
 body {
-    background-color: white;
-    /* Old browser */
-    /*background: #006e2e;*/
-    /*FF3.6+*/
-    /*background: -moz-linear-gradient(top,  #00ac5d 0%, #ffffff 100%);*/
-    /*Chrome,Safari4+ */
-    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ac5d), color-stop(100%,#ffffff));*/
-    /*  Chrome10+,Safari5.1+ */
-    /*background: -webkit-linear-gradient(top,  #00ac5d 0%,#ffffff 100%);*/
-    /*   Opera 11.10+ */
-    /*background: -o-linear-gradient(top,  #00ac5d 0%,#ffffff 100%);*/
-    /*   IE10+ */
-    /*background: -ms-linear-gradient(top,  #00ac5d 0%,#ffffff 100%);*/
-    /*   W3C */
-    /*background: linear-gradient(to bottom,  #00ac5d 0%,#ffffff 100%);*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ac5d', endColorstr='#ffffff',GradientType=0 );*/
-
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    min-height: 100%;
+    background: url(images/sky_grass.png) no-repeat;
+    background-size: 100% 100%;
 }
 
 h1, h2, h3, h4 {
@@ -71,9 +49,9 @@ p, .menu_link {
 }
 
 .banner {
+    padding-top: 10px;
     text-align: center;
     width: 40%;
-    /*height: 200px;*/
 }
 
 #brand-img {
@@ -90,17 +68,14 @@ p, .menu_link {
 */
 
 #banner-header {
-    background: #006e2e; /* Old browsers */
-    position: relative;
-    border-bottom: 2px solid green;
+    position: fixed;
     display: block;
     text-align: center;
-    height: auto;
+    height: 240px;
     top: 0;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    /*padding-top: 6px;*/
 }
 
 #banner-header p {
@@ -142,7 +117,7 @@ p, .menu_link {
  */
 
 .current-menu-item > a {
-    background-color: #006600 !important;
+    background-color: #8cc63f !important;
 }
 
 a.content-link {
@@ -239,7 +214,7 @@ a.content-link:visited {
 .menu_link:hover {
     margin-bottom: 10px;
     color: white;
-    background-color: #006600 !important;
+    background-color: #8cc63f !important;
 }
 
 #home a {
@@ -267,7 +242,7 @@ a.content-link:visited {
     padding-top: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
+    margin-top: 180px;
     width: 70%;
     height: 24px;
     z-index: 2;
@@ -418,9 +393,6 @@ a.content-link:visited {
     height: 25px !important;
 }
 
-#socialmedia-container DIV.smc_icon_container {
-    /*height: 10px;*/
-}
 
 /* MISCELLANEOUS
 ================================================
@@ -436,30 +408,6 @@ a.content-link:visited {
 
 .alert {
     background-color: #E8E819;
-}
-
-.multi-left {
-    background-color: greenyellow;
-    float:left;
-    width: 15%;
-    height: 200px;
-}
-
-.multi-right {
-    background-color: greenyellow;
-
-    float: left;
-    width: 15%;
-    height: 200px;
-
-}
-
-.image {
-    float: left;
-    margin: 0 auto;
-    width: 70%;
-    height: 200px;
-
 }
 
 /* MEDIA QUERIES
@@ -496,23 +444,6 @@ MOBILE LAYOUTS
 
 }
 @media (max-width: 1000px) {
-    body {
-        /* Old browser */
-        background: #006e2e;
-        /*FF3.6+*/
-        background: -moz-linear-gradient(top,  #00ac5d 0%, #ffffff 100%);
-        /*Chrome,Safari4+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ac5d), color-stop(100%,#ffffff));
-        /*  Chrome10+,Safari5.1+ */
-        background: -webkit-linear-gradient(top,  #00ac5d 0%,#ffffff 100%);
-        /*   Opera 11.10+ */
-        background: -o-linear-gradient(top,  #00ac5d 0%,#ffffff 100%);
-        /*   IE10+ */
-        background: -ms-linear-gradient(top,  #00ac5d 0%,#ffffff 100%);
-        /*   W3C */
-        background: linear-gradient(to bottom,  #00ac5d 0%,#ffffff 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ac5d', endColorstr='#ffffff',GradientType=0 );
-    }
 
     #banner-header {
         background-color:transparent;
@@ -523,10 +454,6 @@ MOBILE LAYOUTS
 
     #checklist-guy {
         display: none;
-    }
-
-    .page-container, .footer-area, .nav-wrapper, .banner {
-        width: 100%;
     }
 
     #banner-header {
@@ -591,8 +518,12 @@ MOBILE LAYOUTS
         border-radius: 5px;
     }
 
+    .mobile-nav > li {
+        margin-bottom: 10px;
+    }
+
     .current-menu-item > a {
-        background-color: #65d615 !important;
+        background-color: #8cc63f !important;
     }
 
     .menu_link {
@@ -601,7 +532,7 @@ MOBILE LAYOUTS
 
     .menu_link:hover {
         padding: 5px;
-        margin-bottom: 4px;
+        margin-bottom: 10px;
         border-radius: 4px 4px 4px 4px;
         background-color: #006600;
     }
@@ -638,12 +569,16 @@ MOBILE LAYOUTS
         display: none;
     }
 
-    .banner, #banner-header {
+    .banner, #banner-header, .page-container, .nav-wrapper, .footer-area {
         width: 100%;
-        height: 100px;
+        /*height: 100px;*/
     }
 }
-
+@media (max-width: 800px) and (min-width: 700px) {
+    .page-container, .footer-area, .banner, #banner-header, .nav-wrapper {
+        width: 80%;
+    }
+}
 @media (max-width: 325px) {
     #search-form {
         display: none;

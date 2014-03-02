@@ -38,10 +38,12 @@
 <?php } ?>
 
  <header id="banner-header">
-     <div class="multi-left">&nbsp;</div>
-     <div class="image"><img class="banner" src="<?php echo wp_get_attachment_url(413);?>" alt="Kind Technology Services" /></div>
-     <div class="multi-right">&nbsp;</div>
-     <div style="clear:both;"></div>
+<!--     <div class="multi-left">&nbsp;</div>-->
+<!--     <div class="image">-->
+         <img class="banner" src="<?php echo wp_get_attachment_url(407);?>" alt="Kind Technology Services" />
+<!--     </div>-->
+<!--     <div class="multi-right">&nbsp;</div>-->
+<!--     <div style="clear:both;"></div>-->
  </header>
 <div class="nav-wrapper">
     <div class="btn-navbar">
