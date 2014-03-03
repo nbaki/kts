@@ -14,8 +14,16 @@ Version:        2.0.0
 /** BODY, HEADERS, PARAGRAPHS
 =============================================
 **/
+html, body {
+    height: 100%;
+}
+
+html {
+    overflow-y: hidden;
+}
 
 body {
+    overflow-y: scroll;
     background: url(images/sky_grass.png);
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -69,10 +77,9 @@ p, .menu_link {
 */
 
 #banner-header {
-    position: fixed;
+    position: relative;
     display: block;
     text-align: center;
-    height: 240px;
     top: 0;
     width: 100%;
     margin-left: auto;
@@ -243,7 +250,7 @@ a.content-link:visited {
     padding-top: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 180px;
+    margin-top: 10px;
     width: 70%;
     height: 24px;
     z-index: 2;
@@ -445,6 +452,10 @@ MOBILE LAYOUTS
 
 }
 @media (max-width: 1000px) {
+
+    #contact-info {
+        width: 50%;
+    }
 
     #banner-header {
         background-color:transparent;
