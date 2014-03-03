@@ -22,7 +22,6 @@ elseif (is_page('About Us')) : ?>
     <script>
         $(document).ready(function () {
             $('.content-container').css("background", "url('<?php echo wp_get_attachment_url(312); ?>')");
-            $('body').css('background-size', 'cover');
         });
     </script>
 <?php endif; ?>

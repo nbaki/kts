@@ -37,14 +37,9 @@
         <?php endif; ?>
 <?php } ?>
 
- <header id="banner-header">
-<!--     <div class="multi-left">&nbsp;</div>-->
-<!--     <div class="image">-->
-         <img class="banner" src="<?php echo wp_get_attachment_url(407);?>" alt="Kind Technology Services" />
-<!--     </div>-->
-<!--     <div class="multi-right">&nbsp;</div>-->
-<!--     <div style="clear:both;"></div>-->
- </header>
+<header id="banner-header">
+    <img class="banner" src="<?php echo wp_get_attachment_url(407);?>" alt="Kind Technology Services" />
+</header>
 <div class="nav-wrapper">
     <div class="btn-navbar">
         <a id="mobile-nav-button-minus" href="#" style="display: none;"><img
