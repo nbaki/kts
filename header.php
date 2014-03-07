@@ -14,6 +14,7 @@
     <script src="<?php echo get_childTheme_url(); ?>/scripts/jquery-1.3.2.min.js" type="text/javascript" ></script>
     <script src="<?php echo get_childTheme_url(); ?>/scripts/heavenly.js" type="text/javascript" ></script>
     <?php wp_head(); ?>
+
 </head>
 <body <?php body_class(); ?>>
 
