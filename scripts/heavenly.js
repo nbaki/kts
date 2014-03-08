@@ -94,43 +94,28 @@ function removeLinks() {
 
 function setActiveTab(page) {
     if (page == 'Home') {
-            $('#home_link').css('padding-bottom', 7);
-            $('#home_link').css('border-bottom', 0);
-            $('#home_link').css('border-bottom-left-radius', 0);
-            $('#home_link').css('border-bottom-right-radius', 0);
-            $('.nav-wrapper').css('border-bottom', '7px solid #8cc63f');
-            $('.page-container').css('border-bottom', '10px solid #8cc63f');
+        $('#home_link').css('padding-bottom', 7);
+        $('#home_link').css('border-bottom', 0);
+        $('.page-container').css('border-bottom', '10px solid #8cc63f');
     }
     else if (page == 'About Us') {
             $('#about_us_link').css('padding-bottom', 7);
             $('#about_us_link').css('border-bottom', 0);
-            $('#about_us_link').css('border-bottom-left-radius', 0);
-            $('#about_us_link').css('border-bottom-right-radius', 0);
-            $('.nav-wrapper').css('border-bottom', '7px solid #8cc63f');
             $('.page-container').css('border-bottom', '10px solid #8cc63f');
     }
     else if (page == 'Our Process') {
             $('#our_process_link').css('padding-bottom', 7);
             $('#our_process_link').css('border-bottom', 0);
-            $('#our_process_link').css('border-bottom-left-radius', 0);
-            $('#our_process_link').css('border-bottom-right-radius', 0);
-            $('.nav-wrapper').css('border-bottom', '7px solid #8cc63f');
             $('.page-container').css('border-bottom', '10px solid #8cc63f');
     }
     else if (page == 'Services') {
             $('#services_link').css('padding-bottom', 7);
             $('#services_link').css('border-bottom', 0);
-            $('#services_link').css('border-bottom-left-radius', 0);
-            $('#services_link').css('border-bottom-right-radius', 0);
-            $('.nav-wrapper').css('border-bottom', '7px solid #8cc63f');
             $('.page-container').css('border-bottom', '10px solid #8cc63f');
     }
     else if (page == 'Contact Us') {
             $('#contact_us_link').css('padding-bottom', 7);
             $('#contact_us_link').css('border-bottom', 0);
-            $('#contact_us_link').css('border-bottom-left-radius', 0);
-            $('#contact_us_link').css('border-bottom-right-radius', 0);
-            $('.nav-wrapper').css('border-bottom', '7px solid #8cc63f');
             $('.page-container').css('border-bottom', '10px solid #8cc63f');
     }
 }
@@ -163,4 +148,13 @@ function processQuestions() {
         }
         return false;
     });
+}
+
+function ieStyle() {
+    $('.mobile-services').show().css('text-align', 'center').css('list-style-type', 'none');
+    $('.service-table').hide();
+    $('#process-flow').hide();
+    $('#checklist-guy').hide();
+    $('#contact-info').hide();
+    $('#mobile-contact-info').show();
 }

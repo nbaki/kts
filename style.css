@@ -224,7 +224,7 @@ a.content-link:visited {
     color: #006600;
     font-weight: bold;
     font-size: 15px;
-    padding: 1px 13px 6px 15px;
+    padding: 1px 13px 5px 15px;
     margin-bottom: 0;
     border-bottom: 0;
     background-color: white;
@@ -236,6 +236,7 @@ a.content-link:visited {
     box-shadow:         3px 2px 1px 6px black;
     position: relative;
     border-radius: 15px 15px 0 0;
+    border-bottom: 6px solid #8cc63f;
     background-color: white;
     padding-top: 0;
     margin-left: auto;
@@ -250,9 +251,9 @@ a.content-link:visited {
 =============================================
 **/
 .footer-area {
-    -moz-box-shadow:    1px 1px 1px 1px black;
-    box-shadow:         1px 1px 1px 1px black;
-    -webkit-box-shadow: 1px 1px 1px 1px black;
+    -moz-box-shadow:    3px 3px 1px 6px black;
+    box-shadow:         3px 3px 1px 6px black;
+    -webkit-box-shadow: 3px 3px 1px 6px black;
     border-radius: 0 0 15px 15px;
     color: white;
     background-color: #444444;

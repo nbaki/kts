@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html <?php language_attributes(); ?>>
 <head>
  <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" >
@@ -14,10 +14,32 @@
     <script src="<?php echo get_childTheme_url(); ?>/scripts/jquery-1.3.2.min.js" type="text/javascript" ></script>
     <script src="<?php echo get_childTheme_url(); ?>/scripts/heavenly.js" type="text/javascript" ></script>
     <?php wp_head(); ?>
+    <?php
 
+        $safari = strpos($_SERVER['HTTP_USER_AGENT'], 'Safari') ? true : false;
+        $msie = strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') ? true : false;
+        $chrome = strpos($_SERVER['HTTP_USER_AGENT'], 'Chrome') ? true : false;
+        $v6_safari = strpos($_SERVER['HTTP_USER_AGENT'], 'Version/6.');
+        $v5_safari = strpos($_SERVER['HTTP_USER_AGENT'], 'Version/5.');
+        if ($safari && !($v6_safari || $v5_safari || $chrome)) {
+            echo '<link rel="stylesheet" href="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/themes/kindtech/styles/safari.css" type="text/css" />';
+        }
+        else if ($msie) {
+
+            echo '<link rel="stylesheet" href="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/themes/kindtech/styles/msie.css" type="text/css" />';
+            echo "
+            <script>
+                $(document).ready(function() {
+                    if ($(window).width() <= 800) {
+                        ieStyle();
+                    }
+                });
+            </script>";
+        }
+
+    ?>
 </head>
 <body <?php body_class(); ?>>
-
 <script>
     $(document).ready(function() {
         setHeaderDefaults();
@@ -39,7 +61,9 @@
 <?php } ?>
 
 <header id="banner-header">
-    <img class="banner" src="<?php echo wp_get_attachment_url(407);?>" alt="Kind Technology Services" />
+    <div id="banner">
+        <img class="banner" src="<?php echo wp_get_attachment_url(407);?>" alt="Kind Technology Services" />
+    </div>
 </header>
 <div class="nav-wrapper">
     <div class="btn-navbar">
