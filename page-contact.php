@@ -8,7 +8,7 @@ get_header();
 
 ?>
     <div class="page-container">
-        <div class="content-container">
+        <div class="content-container" style="background: url('<?php echo wp_get_attachment_url(312); ?>') no-repeat;">
             <div class="breadcrumbs">
                 <?php if (function_exists('bcn_display')) {
                     bcn_display();
